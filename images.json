@@ -1,82 +1,64 @@
 {
     "images": [
         {
-            "imgPath": "img/places/australia.jpg",
-            "imgLocation": "Australia",
-            "description": "Loch Ard Gorge",
-            "date": "01/01/2016"
+            "imgPath": "img/places/NJITPIC1.jpg",
+            "imgLocation": "Carpathian, Ukraine.",
+            "description": "Magic pink rhododendron flowers on summer mountain.",
+            "date": "03/09/2022"
         },
         {
-            "imgPath": "img/places/austria.jpg",
-            "imgLocation": "Austria",
-            "description": "Austrian chapel",
-            "date": "01/02/2016"
+            "imgPath": "img/places/NJITPIC2.jpg",
+            "imgLocation": "Stokksnes peninsula, Iceland.",
+            "description": "Vestrahorn towers above a lagoon and black sand beach in southeast Iceland.",
+            "date": "02/22/2023"
         },
         {
-            "imgPath": "img/places/france.jpg",
+            "imgPath": "img/places/NJITPIC3.jpg",
             "imgLocation": "Paris",
             "description": "Eiffel Tower",
             "date": "01/03/2016"
         },
         {
-            "imgPath": "img/places/greece.jpg",
-            "imgLocation": "Greece",
-            "description": "Greek coastline",
-            "date": "01/04/2016"
+            "imgPath": "img/places/NJITPIC4.jpg",
+            "imgLocation": "Banff National Park, Alberta.",
+            "description": "Lake Louise, a turquoise glacial lake surrounded by towering evergreens and snowclad summits.",
+            "date": "02/22/2023"
         },
         {
-            "imgPath": "img/places/hungary.jpg",
-            "imgLocation": "Hungary",
-            "description": "Budapest skyline",
-            "date": "01/05/2016"
+            "imgPath": "img/places/NJITPIC5.jpg",
+            "imgLocation": "Carpathian national park, Ukraine",
+            "description": "The magic rhododendron blossoms in springtime.",
+            "date": "11/22/2017"
         },
         {
-            "imgPath": "img/places/india.jpg",
-            "imgLocation": "India",
-            "description": "Taj Mahal",
-            "date": "01/06/2016"
+            "imgPath": "img/places/NJITPIC6.jpg",
+            "imgLocation": "Yunnan Cascade Falls Nature Park, China.",
+            "description": "Mountain Stone Waterfall Landscape",
+            "date": "03/18/2021"
         },
         {
-            "imgPath": "img/places/italy.jpg",
-            "imgLocation": "Italy",
-            "description": "Venice",
-            "date": "01/07/2016"
+            "imgPath": "img/places/NJITPIC7.jpg",
+            "imgLocation": "Gullfoss, Iceland",
+            "description": "Beautiful Scenery of Iceland waterfalls.",
+            "date": "06/21/2019"
         },
         {
-            "imgPath": "img/places/japan.jpg",
-            "imgLocation": "Japan",
-            "description": "Hirosaki Castle",
-            "date": "01/08/2016"
+            "imgPath": "img/places/NJITPIC8.jpg",
+            "imgLocation": "Pentland hills, near Edinburgh, Scotland",
+            "description": "Violet heather flowers and green valley, river, mountains.",
+            "date": "08/13/2020"
         },
         {
-            "imgPath": "img/places/korea.jpg",
+            "imgPath": "img/places/NJITPIC9.jpg",
             "imgLocation": "South Korea",
             "description": "Seoul",
             "date": "01/09/2016"
         },
         {
-            "imgPath": "img/places/norway.jpg",
+            "imgPath": "img/places/NJITPIC10.jpg",
             "imgLocation": "Norway",
             "description": "Countryside mountains",
             "date": "01/10/2016"
-        },
-        {
-            "imgPath": "img/places/switzerland.jpg",
-            "imgLocation": "Switzerland",
-            "description": "Lake castle",
-            "date": "01/11/2016"
-        },
-        {
-            "imgPath": "img/places/thailand.jpg",
-            "imgLocation": "Thailand",
-            "description": "Beachline",
-            "date": "01/12/2016"
-        },
-        {
-            "imgPath": "img/places/turkey.jpg",
-            "imgLocation": "Turkey",
-            "description": "Istanbul",
-            "date": "01/13/2016"
         }
   ]
 }
