@@ -7,8 +7,12 @@ $(document).ready(() => {
   $('.details').hide() // Hide details initially
 
   // Call a function here to start the timer for the slideshow
-
+  startTimer();
   // Select the moreIndicator button and add a click event to:
+  $('.moreIndicator').on('click', function () {
+    $('.details').slideToggle();
+    $('.moreIndicator').toggleClass('rot270 rot90');
+  })
   // - toggle the rotation classes (rot90 and rot270)
   // - slideToggle the visibility of the .details section
 
@@ -20,7 +24,6 @@ $(document).ready(() => {
   fetchJSON()
 })
 
-// Function to fetch JSON data and store it in mImages
 function fetchJSON () {
   $.ajax({
     url: mUrl,
@@ -34,16 +37,18 @@ function fetchJSON () {
         alert("Failed to load JSON file!");
     }
   })
-  // Use $.ajax here to request the JSON data from mUrl
-  // On success, parse the JSON and push each image object into mImages array
-  // After JSON is loaded, call swapPhoto() to display the first image
+
 }
 
 // Function to swap and display the next photo in the slideshow
 function swapPhoto () {
-  // Access mImages[mCurrentIndex] to update the image source and details
-  // Update the #photo element's src attribute with the current image's path
-  // Update the .location, .description, and .date elements with the current image's details
+
+  const image = mImages[mCurrentIndex]; 
+  $('#photo').attr('src', image.imgPath);
+  $('.location').text(`Location: ${image.imgLocation}`);
+  $('.description').text(`Description: ${image.description}`);
+  $('.date').text(`Date: ${image.date}`);
+
 }
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
