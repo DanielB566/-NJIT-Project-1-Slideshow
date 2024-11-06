@@ -61,7 +61,7 @@ function swapPhoto() {
 // Advances to the next photo, loops to the first photo if the end of array is reached
 function showNextPhoto() {
   mCurrentIndex++;
-  if (mCurrentIndex   == mImages.length) {
+  if (mCurrentIndex == mImages.length) {
     mCurrentIndex = 0;
   }
   swapPhoto()
@@ -74,12 +74,9 @@ function showNextPhoto() {
   // Ensure it loops back to the beginning if mCurrentIndex exceeds array length
 }
 
-// Goes to the previous photo, loops to the last photo if mCurrentIndex goes negative
 function showPrevPhoto() {
-  mCurrentIndex = (mCurrentIndex - 1)
+  mCurrentIndex = (mCurrentIndex - 1 + mImages.length) % mImages.length; // Move to the previous image in the slideshow, looping back to the last image if at the start
   swapPhoto()
-  // Decrement mCurrentIndex and call swapPhoto()
-  // Ensure it loops to the end if mCurrentIndex is less than 0
 }
 
 // Starter code for the timer function
