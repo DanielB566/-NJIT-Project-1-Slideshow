@@ -25,10 +25,10 @@ body {
 
 /* Style for the photo displayed in the slideshow */
 .thumbnail {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: 500px; /* Fixed width */
+    height: 375px; /* Fixed height */
     border-radius: 4px;
+    object-fit: cover; /* Ensures the image fills the area without distortion */
     /* Optional: Add shadow here */
 }
 
@@ -42,19 +42,21 @@ body {
 
 /* Style for the 'More Content' indicator */
 .moreIndicator {
-    height: 50px; /* Adjust size for a balanced look */
-    width: 50px;
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
     cursor: pointer;
-    transition: transform 0.3s ease; /* Smooth rotation transition */
+    transition: transform .7s ease;
     /* Add initial rotation styling here */
 }
+
+
 
 /* Navigation button styles */
 #nav img {
     height: 50px; /* Adjust button size for responsiveness */
     width: 50px;
     cursor: pointer;
-    transition: opacity 0.3s; /* Optional: Add hover effect */
+    transition: opacity 0.3s; transform: 0.2s; /* Optional: Add hover effect */
 }
 
 /* Metadata container styling */
@@ -77,7 +79,7 @@ Make it animate nicely. You'll need CSS3 for this */
 .rot90 {
     /* Add 90-degree rotation */
     transform: rotate(90deg);
-    transition: transform 1s;
+    transition: transform .7s;
 }
 
 /* Add CSS styles to rotate the element 180deg
@@ -92,5 +94,13 @@ Make it animate nicely. You'll need CSS3 for this */
 .rot270 {
     /* Add 270-degree rotation */
     transform: rotate(270deg);
-    transition: transform 1s;
+    transition: transform 0.3s;
 }
+
+
+
+
+
+
+
+
