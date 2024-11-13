@@ -1,7 +1,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Century Gothic', sans-serif;
-    background-image: url('../img/geometry.jpg');
+    background-color: black;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -100,6 +100,80 @@ Make it animate nicely. You'll need CSS3 for this */
 
 
 
+
+
+/* Shooting Star Animation helped by GPT */
+.shooting-star-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0; /* Ensure it is behind other content */
+    pointer-events: none; /* Make it non-interactive */
+}
+
+.shooting-star {
+    position: absolute;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 15px 7px rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: shootingStarLeft linear infinite;
+}
+
+/* Keyframes for stars coming from the top left */
+@keyframes shootingStarLeft {
+    0% {
+        top: -10%;
+        left: -10%;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        left: 100%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.3);
+    }
+}
+
+/* Keyframes for stars coming from the top right */
+@keyframes shootingStarRight {
+    0% {
+        top: -10%;
+        left: 110%;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        left: 0%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.3);
+    }
+}
+
+/* Different sizes, speeds, and directions for each shooting star */
+.shooting-star:nth-child(1) { width: 10px; height: 10px; animation: shootingStarLeft 2s linear infinite; animation-delay: 0s; }
+.shooting-star:nth-child(2) { width: 12px; height: 12px; animation: shootingStarRight 2.5s linear infinite; animation-delay: 0.5s; }
+.shooting-star:nth-child(3) { width: 14px; height: 14px; animation: shootingStarLeft 3s linear infinite; animation-delay: 1s; }
+.shooting-star:nth-child(4) { width: 16px; height: 16px; animation: shootingStarRight 2.8s linear infinite; animation-delay: 1.5s; }
+.shooting-star:nth-child(5) { width: 10px; height: 10px; animation: shootingStarLeft 3.5s linear infinite; animation-delay: 2s; }
+.shooting-star:nth-child(6) { width: 12px; height: 12px; animation: shootingStarRight 3s linear infinite; animation-delay: 2.5s; }
+.shooting-star:nth-child(7) { width: 10px; height: 10px; animation: shootingStarLeft 2.2s linear infinite; animation-delay: 3s; }
+.shooting-star:nth-child(8) { width: 14px; height: 14px; animation: shootingStarRight 2.6s linear infinite; animation-delay: 3.5s; }
+.shooting-star:nth-child(9) { width: 12px; height:
 
 
 
