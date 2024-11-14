@@ -76,7 +76,7 @@ body {
     background-color: #f8f9fa; /* Light background to distinguish from main area */
     border-radius: 4px;
     color: #333;
-    font-size: 1rem; /* Slightly larger text for readability */
+    font-size: 1rem; 
     border: 2px solid rgba(252, 2, 2, 0.8); 
 }
 
