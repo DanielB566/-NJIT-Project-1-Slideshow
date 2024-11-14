@@ -14,13 +14,16 @@ body {
     margin: auto;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    border: 2px solid rgba(252, 2, 2, 0.8); 
 }
 
 /* Holds the displayed photo */
 .photoHolder {
     width: 100%;
     text-align: center;
+    
+    
+    
 }
 
 /* Style for the photo displayed in the slideshow */
@@ -30,6 +33,10 @@ body {
     border-radius: 4px;
     object-fit: cover; /* Ensures the image fills the area without distortion */
     /* Optional: Add shadow here */
+    border: 2px solid rgba(0, 0, 0, 0.8); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7), 0px 0px 20px rgba(0, 0, 0, 0.5),
+                0px 0px 30px rgba(0, 0, 0, 0.3); 
+    
 }
 
 /* Style for the title/banner */
@@ -40,6 +47,7 @@ body {
     /* Optional: Customize the text color */
 }
 
+
 /* Style for the 'More Content' indicator */
 .moreIndicator {
     width: 50px; /* Fixed width */
@@ -47,6 +55,8 @@ body {
     cursor: pointer;
     transition: transform .7s ease;
     /* Add initial rotation styling here */
+    
+
 }
 
 
@@ -67,6 +77,7 @@ body {
     border-radius: 4px;
     color: #333;
     font-size: 1rem; /* Slightly larger text for readability */
+    border: 2px solid rgba(252, 2, 2, 0.8); 
 }
 
 /* Style for each paragraph in details */
